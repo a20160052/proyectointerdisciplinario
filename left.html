@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú de opciones</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        ⁠left-frame {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 18px; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            color: black; 
+            font-size: 18px;
+            text-align: left;
+            transition: all 0.3s ease;
+            padding-left: 20px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+            text-decoration-color: #0080ff;
+        }
+
+        a:before {
+            content: "";
+            position: absolute;
+            left: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 10px;
+            background-color: #0080ff;
+        }
+</style>
+</head>
+<body>
+    <div id="left-frame">
+        <ul>
+            <li><a href="home.html" target="der">Home</a></li>
+            <li><a href="caracteristicas.html" target="der">Características del órgano</a></li>
+            <li><a href="tecnica.html" target="der">Técnica para su fabricación</a></li>
+            <li><a href="beneficios.html" target="der">Beneficios y propuestas de mejora</a></li>
+            <li><a href="opinion.html" target="der">Opinión</a></li>
+            <li><a href="datos_personales.html" target="der">Datos personales</a></li>
+            <li><a href="intranet.html" target="der">Intranet</a></li>
+        </ul>
+    </div>
+</body>
+</html>
